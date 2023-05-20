@@ -1,55 +1,77 @@
-.menu li{
-    list-style: none;
-    display: inline-block;
-    border: 3px inset black;
-   /* margin-left: 20px;
+.menu li {
+  list-style: none;
+  display: inline-block;
+  border: 3px inset black;
+  /* margin-left: 20px;
     margin-right: 20px;*/
-    margin:5px;
-    padding: 5px;
-    border-radius: 5px;
-    text-align: center;
-
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
 }
-.menu li:hover{
-    border: 3px solid black;
-    margin: 8px;
-    padding: 8px;
-    
+.menu li:hover {
+  border: 3px solid black;
+  margin: 8px;
+  padding: 8px;
 }
-.menu{
-    background-color: blanchedalmond;
-    text-align: left;
+.menu {
+  background-color: blanchedalmond;
+  text-align: left;
 }
-.cabecera h1{
-    font-size: 50px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
+.cabecera h1 {
+  font-size: 50px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
 }
 /*h1,h2,h3{
     color: red;
 }*/
-header,section,footer,aside,nav,article{
-    display: block;
+header,
+section,
+footer,
+aside,
+nav,
+article {
+  display: block;
 }
-body{
-    text-align: center;
-    background-color: burlywood;
-   
+body {
+    display: flex;
+    justify-content: center;
+  text-align: center;
+  background-color: burlywood;
 }
-.formulario{
-    width: 900px;
-    border: 1px double black;
-    margin:15px;
-
+.formulario {
+  width: 900px;
+  border: 1px double black;
+  margin: 15px;
 }
-.seccion{
+.seccion {
   margin: 20px;
   width: 600px;
   float: left;
 }
-article{
+article {
   border: 1px solid black;
   padding: 20px;
   margin-bottom: 25px;
   background: cadetblue;
 }
+.referencias {
+  border: 2px solid black;
+  width: 200px;
+  float: left;
+  margin-top: 200px;
+  margin-left: 20px;
+}
+article footer {
+  text-align: right;
+}
+.pie {
+  clear: both;
+}
+img {
+  width: 320px;
+  height: 240px;
+  
+}
+
