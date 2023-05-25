@@ -1,30 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/calculadora.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/calculadora.css" />
     <title>Calculadora</title>
-</head>
-<body>
+    <script>
+       
+      function sumar(num1, num2) {
+        return num1 + num2;
+      }
+      function sumarNumeros() {
+        let numero1 = convertir("num1");
+        let numero2 = convertir("num2");
+        document.getElementById("labelResultado").innerHTML =
+          "Resultado: " + sumar(numero1, numero2);
+      }
+      function restar(num1, num2) {
+        return num1 - num2;
+      }
+      function restarNumeros() {
+        var numero1 = convertir("num1");
+        var numero2 = convertir("num2");
+        document.getElementById("labelResultado").innerHTML =
+          "Resultado: " + restar(numero1, numero2);
+      }
+      function multiplicar(num1, num2) {
+        return num1 * num2;
+      }
+      function multiplicarNumeros() {
+        var numero1 = convertir("num1");
+        var numero2 = convertir("num2");
+        document.getElementById("labelResultado").innerHTML =
+          "Resultado: " + multiplicar(numero1, numero2);
+      }
+      function dividir(num1, num2) {
+        return num1 / num2;
+      }
+      function dividirNumeros() {
+        var numero1 = convertir("num1");
+        var numero2 = convertir("num2");
+        document.getElementById("labelResultado").innerHTML =
+          "Resultado: " + dividir(numero1, numero2);
+      }
+      function convertir(idCampo) {
+        return parseInt(document.getElementById(idCampo).value);
+      }
+    </script>
+  </head>
+  <body>
     <header></header>
     <nav></nav>
     <section>
-        <label for="num1">Numero 1</label>
-        <input type="number" id="num1">
-        <label for="num2">Numero 2</label>
+      <label for="num1">Numero 1</label>
+      <input type="number" id="num1" />
+      <label for="num2">Numero 2</label>
 
-        <input type="number" id="num2">
+      <input type="number" id="num2" />
 
-        <button onclick="document.getElementById('labelResultado').innerHTML='cambio texto'">Sumar</button>
-        <button>Restar</button>
-
-        <button>Multiplicar</button>
-        <button>Dividir</button>
-        <label for="" id="labelResultado">Resultado:</label>
-
+      <button
+        onclick="document.getElementById('labelResultado').style.background='red'"
+      >
+        Js Online
+      </button>
+      <button
+        onclick="document.getElementById('labelResultado').style.color='blue'"
+      >
+        Js Online 2
+      </button>
+      <button onclick="sumarNumeros()">Sumar</button>
+      <button onclick="restarNumeros()">Restar</button>
+      <button onclick="multiplicarNumeros()">Multiplicar</button>
+      <button onclick="dividirNumeros()">Dividir</button>
+      <label for="" id="labelResultado">Resultado:</label>
     </section>
     <footer></footer>
-</body>
+  </body>
 </html>
