@@ -2,6 +2,7 @@ section{
     display: block;
     
     justify-content: center;
+    
 }
 button{
     display: block;
@@ -10,4 +11,7 @@ button{
 input{
     display: block;
     
+}
+strong{
+    color: red;
 }
