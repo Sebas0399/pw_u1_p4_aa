@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/calculadoraDeber.css" />
+    <script src="../js/calculadoraDeber.js"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header></header>
+    <section>
+        <div class="wrapper">
+            <input type="number" name="" id="numero" class="entrada">
+            <label class="resultado" id="resultado">Resultado: </label>
+            <button class="one" onclick="saveNum(1)">1</button>
+            <button class="two"onclick="saveNum(2)">2</button>
+            <button class="three"onclick="saveNum(3)">3</button>
+            <button class="four"onclick="saveNum(4)">4</button>
+            <button class="five"onclick="saveNum(5)">5</button>
+            <button class="six"onclick="saveNum(6)">6</button>
+            <button class="seven"onclick="saveNum(7)">7</button>
+            <button class="eight"onclick="saveNum(8)">8</button>
+            <button class="nine"onclick="saveNum(9)">9</button>
+            <button class="cero"onclick="saveNum(0)">0</button>
+            <button class="equal" onclick="solve()">=</button>
+
+            <button class="suma" onclick="saveOpt('suma')">+</button>
+            <button class="resta"onclick="saveOpt('resta')">-</button>
+            <button class="multiplicacion"onclick="saveOpt('multiplicacion')">*</button>
+            <button class="division" onclick="saveOpt('division')">/</button>
+          </div>
+          
+     
+    </section>
+    <footer></footer>
+  </body>
+</html>
