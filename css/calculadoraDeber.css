@@ -6,6 +6,9 @@
     grid-auto-rows: minmax(50px, auto);
     font-size: 30px;
   }
+  button:active{
+    background-color: cornsilk;
+  }
   .entrada {
     grid-column: 1 / 4;
     grid-row: 1;
